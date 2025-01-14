@@ -11,7 +11,7 @@ const Projects = () => {
           <div className="card-body">
             <h5 className="card-title">E-Commerce App</h5>
             <p className="card-text">A fully functional e-commerce application.</p>
-            <a href="#" className="btn btn-primary">View Demo</a>
+            <a href="http://lex-cart.us-east-2.elasticbeanstalk.com/" className="btn btn-primary">View Demo</a>
             <a href="https://github.com/hrithik007/Ecommerce-App-Using-Java-SpringBoot" className="btn btn-secondary">GitHub</a>
           </div>
         </div>
