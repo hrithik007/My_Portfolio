@@ -430,4 +430,14 @@ iframe {
   margin-right: 5px;
 }
 
+.admin-dashboard-image {
+  background-image: url('https://lexcart-images.s3.us-east-2.amazonaws.com/lexcart-dashboard.png');
+  background-size: cover; /* Ensures the image covers the area */
+  background-position: center; /* Centers the image */
+  height: 500px; /* Adjust the height as needed */
+  width: 100%; /* Makes the div take the full width */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  margin-top: 20px; /* Optional: adds spacing above the image */
+}
+
 

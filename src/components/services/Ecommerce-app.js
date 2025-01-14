@@ -4,67 +4,75 @@ const EcommerceApp = () => {
   return (
     <>
      
-
-      {/* Intro Section */}
-      <section className="intro-section ecommercebackground" >
-        <div className="container text-center d-flex flex-column justify-content-center" style={{ height: "65vh", position: "relative" }}>
-          <div style={{ position: "relative", zIndex: 2 }}>
-            <h1 className="display-4">Welcome to Our E-Commerce Platform</h1>
-            <p className="lead">A role-based platform offering exclusive products with features for Admins and Users</p>
-            <a href="#features" className="btn btn-primary btn-lg mt-3">Explore Features</a>
-          </div>
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.16)", zIndex: 1 }}></div>
-        </div>
-      </section>
-
       {/* Features Section */}
-   {/* Features Section */}
-   <section id="features" className="features-section text-center py-5">
-  <div className="container">
-    <h2 className="display-4">Features</h2>
-    <p className="lead">
-      Explore the powerful features offered by our eCommerce platform, designed to enhance both Admin and User experiences.
-    </p>
-    <div className="row">
-      <div className="col-md-6 d-flex align-items-stretch">
-        <div className="card shadow-lg w-100">
-          <div className="card-body">
-            <h3>Admin Features</h3>
-            <ul>
-              <li>Efficiently manage products, categories, and users (activate, inactivate users)</li>
-              <li>Handle orders and user profiles with ease</li>
-              <li>Send automated email notifications for order status updates and password changes</li>
-            </ul>
+      <section className="intro-section ecommercebackground">
+  <div className="container text-center d-flex flex-column justify-content-center" style={{ height: "65vh", position: "relative" }}>
+    <div style={{ position: "relative", zIndex: 2 }}>
+      <h1 className="display-4">Welcome to Our E-Commerce Platform</h1>
+      <p className="lead">A role-based platform offering exclusive products with features for Admins and Users</p>
+      <a href="#features" className="btn btn-primary btn-lg mt-3">Explore Features</a>
+    </div>
+    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.16)", zIndex: 1 }}></div>
+  </div>
+
+ 
+  <section id="features" className="features-section text-center py-5">
+    <div className="container">
+      <h2 className="display-4">Features</h2>
+      <p className="lead">Explore the powerful functionalities available for Admins and Users.</p>
+      
+      <div className="row">
+      
+        <div className="col-md-6 d-flex align-items-stretch">
+          <div className="card shadow-lg w-100">
+            <div className="card-body">
+              <h3 style={{ color: 'blue' }}>
+                <i className="fas fa-user-shield mr-2"></i> Admin Features
+              </h3>
+              <ul>
+                <li>Manage products, categories, and users (activate, inactivate users)</li>
+                <li>Efficiently handle orders and user profiles</li>
+                <li>Send automated email notifications for order status updates and password changes</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="col-md-6 d-flex align-items-stretch">
-        <div className="card shadow-lg w-100">
-          <div className="card-body">
-            <h3>User Features</h3>
-            <ul>
-              <li>Securely register and log in to your account</li>
-              <li>Easily place orders and track their status</li>
-              <li>Receive email updates on the status of your orders, including:
-                <ul>
-                  <li>In Progress</li>
-                  <li>Order Received</li>
-                  <li>Product Packed</li>
-                  <li>Out for Delivery</li>
-                  <li>Delivered</li>
-                  <li>Cancelled</li>
-                  <li>Success</li>
-                </ul>
-              </li>
-              <li>Manage your profile and preferences with ease</li>
-              <li>Utilize the "Forgot Password" functionality for hassle-free account recovery</li>
-            </ul>
+        
+   
+        <div className="col-md-6 d-flex align-items-stretch">
+          <div className="card shadow-lg w-100">
+            <div className="card-body">
+              <h3 style={{ color: 'green' }}>
+                <i className="fas fa-user mr-2"></i> User Features
+              </h3>
+              <ul>
+                <li>Register and log in to your account securely</li>
+                <li>Place orders and track their status with ease</li>
+                <li>Receive email updates on the status of your orders</li>
+                <li>Manage your profile and preferences</li>
+                <li>Utilize the "Forgot Password" functionality for hassle-free account recovery</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section className="admin-dashboard-section py-5">
+  <div className="container text-center">
+    <h2 className="display-4">Admin Dashboard</h2>
+    <p className="lead">Access the powerful Admin Dashboard with full control over platform functionalities.</p>
+    
+    <div className="admin-dashboard-image"></div>
+
+    <p className="mt-4">Manage products, categories, users, and more through the comprehensive Admin Dashboard.</p>
   </div>
 </section>
+
+</section>
+
+
 
 
 
