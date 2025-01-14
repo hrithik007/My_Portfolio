@@ -1,75 +1,116 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(true); // Track the state of the navbar
+
+  const handleNavbarToggle = () => {
+    setIsNavbarCollapsed(!isNavbarCollapsed); // Toggle the collapse state
+  };
 
   const handleAboutClick = () => {
-    // First navigate to the homepage
-    navigate('/');
-    // Then, scroll to the About Me section after the page loads
+    navigate('/My_Portfolio');
     setTimeout(() => {
       const aboutSection = document.getElementById('about');
       if (aboutSection) {
         aboutSection.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 300); // Wait a moment for the page to load
+    }, 300);
   };
 
-
   const handleContactClick = () => {
-    // First navigate to the homepage
-    navigate('/');
-    // Then, scroll to the About Me section after the page loads
+    navigate('/My_Portfolio');
     setTimeout(() => {
-      const aboutSection = document.getElementById('contact');
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 300); // Wait a moment for the page to load
+    }, 300);
   };
 
   const handleProjectClick = () => {
-    // First navigate to the homepage
-    navigate('/');
-    // Then, scroll to the About Me section after the page loads
+    navigate('/My_Portfolio');
     setTimeout(() => {
-      const aboutSection = document.getElementById('projects');
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      const projectSection = document.getElementById('projects');
+      if (projectSection) {
+        projectSection.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 300); // Wait a moment for the page to load
+    }, 300);
   };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">Hrithik Jaiswal</Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <Link className="navbar-brand" to="/My_Portfolio">
+          Hrithik Jaiswal
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={handleNavbarToggle} // Toggle the navbar on button click
+          aria-controls="navbarNav"
+          aria-expanded={!isNavbarCollapsed ? 'true' : 'false'}
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#about" onClick={handleAboutClick}>About Me</a>
+        <div
+          className={`collapse navbar-collapse ${isNavbarCollapsed ? '' : 'show'}`} // Conditionally apply 'show' class
+          id="navbarNav"
+        >
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item ">
+              <a className="nav-link" href="#about" onClick={handleAboutClick}>
+                About Me
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects" onClick={handleProjectClick}>Projects</a>
+              <a className="nav-link" href="#projects" onClick={handleProjectClick}>
+                Projects
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={handleContactClick}>Contact</a>
+              <a className="nav-link" href="#contact" onClick={handleContactClick}>
+                Contact
+              </a>
             </li>
             <li className="nav-item dropdown text-white">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Services
               </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="dropdown-item" to="/Ecommerce-app">E-Commerce App</Link>
-                <a className="dropdown-item" href="#portfolio">Portfolio Website</a>
-                <a className="dropdown-item" href="#construction">Construction Website</a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#other">Other Services</a>
-              </div>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <Link className="dropdown-item" to="/Ecommerce-app">
+                    E-Commerce App
+                  </Link>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#portfolio">
+                    Portfolio Website
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#construction">
+                    Construction Website
+                  </a>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#other">
+                    Other Services
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

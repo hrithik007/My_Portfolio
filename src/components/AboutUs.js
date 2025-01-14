@@ -6,7 +6,7 @@ const About = () => {
       {/* About Section */}
       <div className="row align-items-center">
         <div className="col-md-6">
-          <img src="img/about-us.png" className="img-fluid" alt="About Me" />
+          <div className="about-img"></div>
         </div>
         <div className="col-md-6">
           <h2>About Me</h2>

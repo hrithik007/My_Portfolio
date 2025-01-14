@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center; /* Align text to the top (optional) */
   justify-content: center; /* Align text to the left */
-background: url(../public/img/portfolio/it.jpg) no-repeat center center/cover;
+  background: url(../public/img/portfolio/it.jpg) no-repeat center center/cover;
   position: relative;
   color: #ffffff;
   margin-top: 0;
@@ -67,6 +67,8 @@ background: url(../public/img/portfolio/it.jpg) no-repeat center center/cover;
   font-weight: 500;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
+  -webkit-font-smoothing: antialiased; /* Improved font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Improved font rendering on macOS */
 }
 
 .navbar a:hover {
@@ -80,6 +82,8 @@ background: url(../public/img/portfolio/it.jpg) no-repeat center center/cover;
   letter-spacing: 1px;
   color: #fff;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased; /* Improved font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Improved font rendering on macOS */
 }
 
 .navbar-nav .nav-item {
@@ -91,6 +95,8 @@ background: url(../public/img/portfolio/it.jpg) no-repeat center center/cover;
   padding: 12px 20px;
   border-radius: 5px;
   transition: color 0.3s ease, background-color 0.3s ease;
+  -webkit-font-smoothing: antialiased; /* Improved font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Improved font rendering on macOS */
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -104,6 +110,16 @@ background: url(../public/img/portfolio/it.jpg) no-repeat center center/cover;
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20viewBox%3D'0%200%2030%2030'%3E%3Cpath%20fill%3D'none'%20stroke%3D'%23fff'%20stroke-width%3D'2'%20d%3D'M0%200h30v30H0z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Navbar text-specific improvements */
+.navbar .nav-link {
+  font-family: Arial, sans-serif; /* Or any other font */
+  font-size: 1rem; /* Adjust font size */
+  text-shadow: none; /* Remove any text shadow */
+  opacity: 1; /* Ensure full opacity */
+  -webkit-font-smoothing: antialiased; /* Enhanced font smoothing for crisp text */
+  -moz-osx-font-smoothing: grayscale; /* Enhanced font smoothing on macOS */
 }
 
 /* Section Spacing */
@@ -219,15 +235,170 @@ iframe {
   border-top: 1px solid #dfe7f0;
 }
 
-.navbar-nav{
+.navbar-nav {
   padding-left: 300px;
 }
 
 .ecommercebackground {
+  position: relative;
   margin-top: 0px;
+  overflow: hidden;
+  color: white;
 }
 
-.technologysection{
-  background-color: "#333";
-   color: "white";
+.ecommercebackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../public/img/portfolio/ecomapp.jpg) no-repeat center center/cover;
+  filter: blur(2.4px); /* Apply blur only to the background image */
+  z-index: 1; /* Place the blurred background below the text */
 }
+
+.ecommercebackground .container {
+  position: relative;
+  z-index: 2; /* Ensure text is above the blurred background */
+}
+
+.technologysection {
+  background-color: "#333";
+  color: "white";
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
+
+/* General Styles for Technology Section */
+.technologysection .tech-card {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* Optional background color */
+}
+
+/* Specific Images for Each Technology */
+.technologysection .java {
+  background-image: url(../public/img/portfolio/java22.jpg);
+}
+
+.technologysection .springboot {
+  background-image: url(../public/img/portfolio/springbt2.png);
+}
+
+.technologysection .mysql {
+  background-image: url(../public/img/portfolio/mysql22.png);
+}
+
+.technologysection .bootstrap {
+  background-image: url(../public/img/portfolio/boot.jpg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .technologysection .tech-card {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Optional Hover Effects */
+.technologysection .tech-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Section */
+.about-img {
+  width: 100%;
+  height: 560px; /* Adjust height as needed */
+  background-image: url("../public/img/about-us.png");
+  background-size: cover;
+}
+
+/* Projects Section */
+.project-img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: for subtle shadow */
+}
+
+.project-img.ecommerce-app {
+  background-image: url("../public/img/portfolio/ecom.png");
+}
+
+.project-img.construction-website {
+  background-image: url("../public/img/portfolio/Construction1.png");
+}
+
+.project-img.interior-designer {
+  background-image: url("../public/img/portfolio/interior1.png");
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-img {
+    height: 150px; /* Reduce height for smaller screens */
+  }
+}
+
+/* Dropdown Menu Styling */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%; /* Center the dropdown relative to its parent */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 10px rgba(32, 78, 184, 0.1);
+  z-index: 9999;
+  text-align: center; /* Center the items inside the dropdown */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #191a1b;
+  color: #f8f9fa;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-divider {
+  border-top: 1px solid #dfe7f0;
+}
+
+/* Ensure the items inside the dropdown are properly centered */
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+  display: block;
+  width: 100%; /* Ensure full width of the parent container for items */
+}
+
+.navbar-nav {
+  padding-left: 0px;
+}
+

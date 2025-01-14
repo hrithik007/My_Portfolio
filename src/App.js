@@ -20,7 +20,7 @@ function App() {
         {/* Render only other components if we're not on the EcommerceApp route */}
         <Routes>
           <Route
-            path="/"
+            path="/My_Portfolio"
             element={
               <>
                 <Hero />

@@ -6,8 +6,8 @@ const EcommerceApp = () => {
      
 
       {/* Intro Section */}
-      <section className="intro-section ecommercebackground" style={{ background: "url('../img/portfolio/ecom2.jpg') center/cover", color: "white" }}>
-        <div className="container text-center d-flex flex-column justify-content-center" style={{ height: "60vh", position: "relative" }}>
+      <section className="intro-section ecommercebackground" >
+        <div className="container text-center d-flex flex-column justify-content-center" style={{ height: "65vh", position: "relative" }}>
           <div style={{ position: "relative", zIndex: 2 }}>
             <h1 className="display-4">Welcome to Our E-Commerce Platform</h1>
             <p className="lead">A role-based platform offering exclusive products with features for Admins and Users</p>
@@ -54,37 +54,38 @@ const EcommerceApp = () => {
 
 
      {/* Technologies Section */}
-<section className="tech-section text-center py-5 technologysection">
+     <section className="tech-section text-center py-5 technologysection">
   <div className="container">
     <h2 className="display-4" style={{ color: "#28a745" }}>Technologies Used</h2>
     <div className="row justify-content-center">
       <div className="col-6 col-md-2 m-3">
         <div className="text-center">
-          <img src="../img/portfolio/java22.jpg" alt="Java" style={{ width: "100px", height: "100px" }} />
+          <div className="tech-card java"></div>
           <div><strong>Java</strong></div>
         </div>
       </div>
       <div className="col-6 col-md-2 m-3">
         <div className="text-center">
-          <img src="../img/portfolio/springbt2.png" alt="Spring Boot" style={{ width: "100px", height: "100px" }} />
+          <div className="tech-card springboot"></div>
           <div><strong>Spring Boot</strong></div>
         </div>
       </div>
       <div className="col-6 col-md-2 m-3">
         <div className="text-center">
-          <img src="../img/portfolio/mysql22.png" alt="MySQL" style={{ width: "100px", height: "100px" }} />
+          <div className="tech-card mysql"></div>
           <div><strong>MySQL</strong></div>
         </div>
       </div>
       <div className="col-6 col-md-2 m-3">
         <div className="text-center">
-          <img src="../img/portfolio/boot.jpg" alt="Bootstrap" style={{ width: "100px", height: "100px" }} />
+          <div className="tech-card bootstrap"></div>
           <div><strong>Bootstrap</strong></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
