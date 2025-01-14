@@ -19,19 +19,21 @@ const EcommerceApp = () => {
 
       {/* Features Section */}
    {/* Features Section */}
-<section id="features" className="features-section text-center py-5">
+   <section id="features" className="features-section text-center py-5">
   <div className="container">
     <h2 className="display-4">Features</h2>
-    <p className="lead">Explore the functionalities available for Admins and Users.</p>
+    <p className="lead">
+      Explore the powerful features offered by our eCommerce platform, designed to enhance both Admin and User experiences.
+    </p>
     <div className="row">
       <div className="col-md-6 d-flex align-items-stretch">
         <div className="card shadow-lg w-100">
           <div className="card-body">
             <h3>Admin Features</h3>
             <ul>
-              <li>Manage products, categories, and users</li>
-              <li>Handle orders and profiles</li>
-              <li>Email notifications for order status and password updates</li>
+              <li>Efficiently manage products, categories, and users (activate, inactivate users)</li>
+              <li>Handle orders and user profiles with ease</li>
+              <li>Send automated email notifications for order status updates and password changes</li>
             </ul>
           </div>
         </div>
@@ -41,9 +43,21 @@ const EcommerceApp = () => {
           <div className="card-body">
             <h3>User Features</h3>
             <ul>
-              <li>Register and log in to your account</li>
-              <li>Place orders and track them</li>
-              <li>Manage your profile and preferences</li>
+              <li>Securely register and log in to your account</li>
+              <li>Easily place orders and track their status</li>
+              <li>Receive email updates on the status of your orders, including:
+                <ul>
+                  <li>In Progress</li>
+                  <li>Order Received</li>
+                  <li>Product Packed</li>
+                  <li>Out for Delivery</li>
+                  <li>Delivered</li>
+                  <li>Cancelled</li>
+                  <li>Success</li>
+                </ul>
+              </li>
+              <li>Manage your profile and preferences with ease</li>
+              <li>Utilize the "Forgot Password" functionality for hassle-free account recovery</li>
             </ul>
           </div>
         </div>
@@ -51,6 +65,7 @@ const EcommerceApp = () => {
     </div>
   </div>
 </section>
+
 
 
      {/* Technologies Section */}
