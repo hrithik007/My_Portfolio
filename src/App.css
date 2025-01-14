@@ -402,3 +402,32 @@ iframe {
   padding-left: 0px;
 }
 
+
+
+.social-icons a {
+  color: rgb(50, 131, 225);
+  text-decoration: none;
+  font-size: 34px; /* Increase size of icons */
+  margin-right: 15px;
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Change icon color on hover */
+}
+.custom-email {
+  color: #4206b9; /* Customize the email color (blue in this case) */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.custom-email:hover {
+  color: #da6511f0; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+.fas.fa-envelope {
+  color: #ff5733; /* Customize the color of the email icon (orange in this case) */
+  margin-right: 5px;
+}
+
+

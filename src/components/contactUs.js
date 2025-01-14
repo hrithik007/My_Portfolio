@@ -8,8 +8,15 @@ const ContactSection = () => {
           {/* Section Heading */}
           <div className="row">
             <div className="col-md-8 mx-auto text-center">
+              <h2 className="mb-4">Get in Touch</h2>
               <p className="lead">
-                Feel free to get in touch with me by filling out the form below. I would love to hear from you!
+                Have questions, suggestions, or just want to connect? Feel free to reach out using the form below, or email me directly at{' '}
+                <a
+                  href="mailto:hrithik.jais2013@gmail.com"
+                  className="custom-email"
+                >
+                  <i className="fas fa-envelope mr-2"></i>hrithik.jais2013@gmail.com
+                </a>. I look forward to hearing from you!
               </p>
             </div>
           </div>

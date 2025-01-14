@@ -10,7 +10,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/hrithik_jaiswal007/" className="mr-3"><i className="fab fa-instagram"></i></a>
       </div>
       <br />
-      <p>Created with ❤️ by Hrithik Jaiswal</p>
+      <p>© 2025 Hrithik Jaiswal. All rights reserved.</p>
     </footer>
   );
 };
