@@ -1,25 +1,30 @@
-import React from "react";
+import React,{ useEffect } from "react";
 
 const EcommerceApp = () => {
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component is rendered
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
      
       {/* Features Section */}
       <section className="intro-section ecommercebackground">
-  <div className="container text-center d-flex flex-column justify-content-center" style={{ height: "65vh", position: "relative" }}>
-    <div style={{ position: "relative", zIndex: 2 }}>
+  <div className="container text-center d-flex flex-column justify-content-center blurred-text-background" style={{ height: "65vh", position: "relative" }}>
+    <div className="">
       <h1 className="display-4">Welcome to Our E-Commerce Platform</h1>
       <p className="lead">A role-based platform offering exclusive products with features for Admins and Users</p>
       <a href="#features" className="btn btn-primary btn-lg mt-3">Explore Features</a>
     </div>
-    <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.16)", zIndex: 1 }}></div>
   </div>
 
  
   <section id="features" className="features-section text-center py-5">
     <div className="container">
-      <h2 className="display-4">Features</h2>
-      <p className="lead">Explore the powerful functionalities available for Admins and Users.</p>
+      <h2 className=" display-4 ">Features</h2>
+      <p className="lead blurred-text-background ">Explore the powerful functionalities available for Admins and Users.</p>
       
       <div className="row">
       
@@ -62,11 +67,11 @@ const EcommerceApp = () => {
   <section className="admin-dashboard-section py-5">
   <div className="container text-center">
     <h2 className="display-4">Admin Dashboard</h2>
-    <p className="lead">Access the powerful Admin Dashboard with full control over platform functionalities.</p>
+    <p className="lead blurred-text-background">Access the powerful Admin Dashboard with full control over platform functionalities.</p>
     
     <div className="admin-dashboard-image"></div>
 
-    <p className="mt-4">Manage products, categories, users, and more through the comprehensive Admin Dashboard.</p>
+    <p className="mt-4 blurred-text-background">Manage products, categories, users, and more through the comprehensive Admin Dashboard.</p>
   </div>
 </section>
 
