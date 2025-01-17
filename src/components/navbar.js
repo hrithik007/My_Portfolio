@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   const handleAboutClick = () => {
-    navigate('/My_Portfolio');
+    navigate('/');
     setTimeout(() => {
       const aboutSection = document.getElementById('about');
       if (aboutSection) {
@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   const handleContactClick = () => {
-    navigate('/My_Portfolio');
+    navigate('/');
     setTimeout(() => {
       const contactSection = document.getElementById('contact');
       if (contactSection) {
@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   const handleProjectClick = () => {
-    navigate('/My_Portfolio');
+    navigate('/');
     setTimeout(() => {
       const projectSection = document.getElementById('projects');
       if (projectSection) {
@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/My_Portfolio">
+        <Link className="navbar-brand" to="/">
           Hrithik Jaiswal
         </Link>
         <button
