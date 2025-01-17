@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/My_Portfolio/static/css/main.b7bd1953.css",
-    "main.js": "/My_Portfolio/static/js/main.b721a64a.js",
-    "static/js/488.dda301fe.chunk.js": "/My_Portfolio/static/js/488.dda301fe.chunk.js",
-    "static/media/it.jpg": "/My_Portfolio/static/media/it.cb8e0e22d6be334b7e6d.jpg",
-    "static/media/interior1.png": "/My_Portfolio/static/media/interior1.77a72a91ed43a5bdd5c2.png",
-    "static/media/Construction1.png": "/My_Portfolio/static/media/Construction1.8590252ed9f90e6d9a35.png",
-    "static/media/ecom.png": "/My_Portfolio/static/media/ecom.bc1965e76c0e87e5f899.png",
-    "static/media/ecomapp.jpg": "/My_Portfolio/static/media/ecomapp.ab8ec72323fbcd2280d4.jpg",
-    "static/media/about-us.png": "/My_Portfolio/static/media/about-us.b89e4185d728718f1687.png",
-    "static/media/boot.jpg": "/My_Portfolio/static/media/boot.6d2d0128b0c02a24c19d.jpg",
-    "static/media/subscribe-bg.png": "/My_Portfolio/static/media/subscribe-bg.c665549310c9eb8a6df6.png",
-    "static/media/java22.jpg": "/My_Portfolio/static/media/java22.d4f1eb224df578c14b12.jpg",
-    "static/media/springbt2.png": "/My_Portfolio/static/media/springbt2.b2b6812023000be36a65.png",
-    "static/media/footer-bg.png": "/My_Portfolio/static/media/footer-bg.0ecbf31c1dc5d5b837f6.png",
-    "index.html": "/My_Portfolio/index.html",
-    "main.b7bd1953.css.map": "/My_Portfolio/static/css/main.b7bd1953.css.map",
-    "main.b721a64a.js.map": "/My_Portfolio/static/js/main.b721a64a.js.map",
-    "488.dda301fe.chunk.js.map": "/My_Portfolio/static/js/488.dda301fe.chunk.js.map"
+    "main.css": "/static/css/main.ca7ea06b.css",
+    "main.js": "/static/js/main.30c8f423.js",
+    "static/js/488.dda301fe.chunk.js": "/static/js/488.dda301fe.chunk.js",
+    "static/media/it.jpg": "/static/media/it.cb8e0e22d6be334b7e6d.jpg",
+    "static/media/interior1.png": "/static/media/interior1.77a72a91ed43a5bdd5c2.png",
+    "static/media/Construction1.png": "/static/media/Construction1.8590252ed9f90e6d9a35.png",
+    "static/media/ecom.png": "/static/media/ecom.bc1965e76c0e87e5f899.png",
+    "static/media/ecomapp.jpg": "/static/media/ecomapp.ab8ec72323fbcd2280d4.jpg",
+    "static/media/about-us.png": "/static/media/about-us.b89e4185d728718f1687.png",
+    "static/media/boot.jpg": "/static/media/boot.6d2d0128b0c02a24c19d.jpg",
+    "static/media/subscribe-bg.png": "/static/media/subscribe-bg.c665549310c9eb8a6df6.png",
+    "static/media/java22.jpg": "/static/media/java22.d4f1eb224df578c14b12.jpg",
+    "static/media/springbt2.png": "/static/media/springbt2.b2b6812023000be36a65.png",
+    "static/media/footer-bg.png": "/static/media/footer-bg.0ecbf31c1dc5d5b837f6.png",
+    "index.html": "/index.html",
+    "main.ca7ea06b.css.map": "/static/css/main.ca7ea06b.css.map",
+    "main.30c8f423.js.map": "/static/js/main.30c8f423.js.map",
+    "488.dda301fe.chunk.js.map": "/static/js/488.dda301fe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7bd1953.css",
-    "static/js/main.b721a64a.js"
+    "static/css/main.ca7ea06b.css",
+    "static/js/main.30c8f423.js"
   ]
 }
