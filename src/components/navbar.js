@@ -105,11 +105,7 @@ const Navbar = () => {
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
-                <li>
-                  <a className="dropdown-item" href="#other">
-                    Other Services
-                  </a>
-                </li>
+          
               </ul>
             </li>
           </ul>
