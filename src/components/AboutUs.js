@@ -12,7 +12,7 @@ const About = () => {
           <section>
             <h1>Experienced Software Engineer</h1>
             <p>
-              Experienced software engineer with 2.7 years of expertise in Java, Spring Framework, React, and MySQL.
+              Experienced software engineer with 3+ years of expertise in Java, Spring Framework, React, and MySQL.
               Skilled in client communication, team collaboration, problem-solving, and Agile methodologies for efficient
               software delivery.
             </p>
@@ -20,7 +20,7 @@ const About = () => {
             <h2>About Me</h2>
             <p>
               Hi, I'm <strong>Hrithik Jaiswal</strong>, a skilled software engineer specializing in <strong>Java</strong> and backend
-              development. With over 2.7 years of experience, I’ve built scalable web applications using <strong>Spring Boot</strong>,{' '}
+              development. With over 3 years of experience, I’ve built scalable web applications using <strong>Spring Boot</strong>,{' '}
               <strong>SQL</strong>, and modern web technologies.
             </p>
           </section>
@@ -94,7 +94,7 @@ const About = () => {
         <div className="col">
           <h3 className="text-center mb-4">Education</h3>
           <p className="text-center">
-            <strong>Siliguri Institute of Technology</strong> | B.Tech in Computer Science and Engineering | CGPA: 8.76/10 (2018 – 2022)
+            <strong>Siliguri Institute of Technology</strong> | B.Tech in Computer Science and Engineering | CGPA: 8.8/10 (2018 – 2022)
           </p>
         </div>
       </div>
